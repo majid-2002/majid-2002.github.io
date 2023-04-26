@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
           <a href="https://www.github.com/majid-2002">
             <FontAwesomeIcon icon={faGithub} size="xl" />
           </a>
-          <a href="https://www.instgram.com/majid.127x">
+          <a href="https://www.instagram.com/majid.127x">
             <FontAwesomeIcon icon={faInstagram} size="xl" />
           </a>
         </div>
