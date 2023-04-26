@@ -5,6 +5,9 @@ import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/date";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 //? static site generation external data rendered at build time
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData(); //? get data from external api or file system
@@ -26,9 +29,14 @@ export default function Home({ allPostsData }) {
           Hello I am <b>Majid</b>, a software developer, working on Next.JS,
           React.JS and Full Stack Apps Using Node.JS
         </p>
-        <p>
-          Checkout My social <Link href="/social">links</Link>.
-        </p>
+        <div className={utilStyles.socialIconList}>
+          <a href="https://www.github.com/majid-2002">
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
+          <a href="https://www.instgram.com/majid.127x">
+            <FontAwesomeIcon icon={faInstagram} size="xl" />
+          </a>
+        </div>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

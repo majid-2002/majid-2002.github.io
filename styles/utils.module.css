@@ -50,3 +50,18 @@
 .lightText {
   color: #666;
 }
+
+
+.socialIconList {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.socialIconList a {
+  color: #333;
+}
+
+.socialIconList a:hover {
+  color: #000;
+}
