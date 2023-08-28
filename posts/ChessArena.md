@@ -1,6 +1,6 @@
 ---
 title: 'Chess Arena Journey'
-date: '2023-08-22'
+date: '2023-08-20'
 ---
 
 **Day 1: Aug 20, 2023 - Embarking on the Chess App Journey**
