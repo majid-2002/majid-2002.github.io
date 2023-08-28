@@ -31,6 +31,10 @@ Enhancing the user experience has been the focus of today. I implemented a featu
 
 As the chess app takes shape, I spent today playtesting and identifying potential bugs and glitches. It's a crucial step to ensure a smooth and enjoyable experience for future users. Debugging, fine-tuning, and making small improvements have been my main tasks. Every issue resolved brings me closer to a more refined app.
 
+
+
 **Day 8: Aug 28, 2023 - Introducing Opponent AI**
 
 A major milestone was reached today — I introduced AI for an opponent! Implementing a basic AI that can make random legal moves adds a whole new dimension to the game. It's fascinating to see the AI opponent strategize and interact with the player. The feeling of playing against my own creation is surreal.
+
+![ChessBoard](/images/ChessPlay.png)
