@@ -51,7 +51,6 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-
       </header>
       <main>{children}</main>
       {!home && (
