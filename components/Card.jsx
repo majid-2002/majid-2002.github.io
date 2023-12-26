@@ -18,7 +18,7 @@ const Card = ({ title, description, image, github, link, techstack }) => {
                 <h2 className="text-lg font-semibold">{title}</h2>
                 <p className="text-gray-700 mb-4 text-sm">{description}</p>
                 <div className="flex gap-x-2">
-                    {techstack && techstack.map((icon) => <div>{icon}</div>)}
+                    {techstack && techstack.map((icon, id) => <div key={id}>{icon}</div>)}
                 </div>
                 <div className="flex justify-end">
                     {github && (
