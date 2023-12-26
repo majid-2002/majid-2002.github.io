@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
 
   const projects = [
     {
-      name: "Formify Ai",
+      title: "Formify Ai",
       description: "An Ai powered form builder with web3 based validation",
       image: "/images/formify.png",
       techstack: [
@@ -69,7 +69,7 @@ export default function Home({ allPostsData }) {
       link: "https://formify-ai.vercel.app/",
     },
     {
-      name: "ChessArena",
+      title: "ChessArena",
       image: "/images/chess.png",
       description: "A Chess multiplayer game",
       techstack: ["next", "tailwind", "mongodb", "node", "socketio"].map(
@@ -90,17 +90,17 @@ export default function Home({ allPostsData }) {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
+      <section className={"text-lg  flex flex-col"}>
+        <p> 
           Hello I am <b>Majid</b>, a software developer, working on Next.JS,
           React.JS and Full Stack Apps Using Node.JS
         </p>
         <div className={utilStyles.socialIconList + " pt-4"}>
           <a href="https://www.github.com/majid-2002">
-            <FontAwesomeIcon icon={faGithub} size="xl" />
+            <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
           <a href="https://www.instagram.com/majid.127x">
-            <FontAwesomeIcon icon={faInstagram} size="xl" />
+            <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
         </div>
       </section>
@@ -128,8 +128,6 @@ export default function Home({ allPostsData }) {
           })}
         </div>
       </section>
-
-
     </Layout>
   );
 }

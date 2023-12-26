@@ -2,10 +2,11 @@ import React from "react";
 
 const Card = ({ title, description, image, github, link, techstack }) => {
     return (
-        <div className=" mx-auto mb-8 bg-white rounded-xl overflow-hidden shadow-md">
-            <div className="relative">
+        // create a tranparent bg for the card
+        <div className=" mx-auto mb-8 rounded-xl overflow-hidden shadow-md bg-white">
+            <div className="relative p-2 sm:p-4">
                 <img
-                    className="w-auto mx-auto h-full object-cover object-center"
+                    className="w-auto mx-auto h-full object-cover object-center rounded-md"
                     src={
                         image ||
                         "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -13,9 +14,9 @@ const Card = ({ title, description, image, github, link, techstack }) => {
                     alt={title}
                 />
             </div>
-            <div className="p-6">
-                <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <p className="text-gray-700 mb-4">{description}</p>
+            <div className="p-2 sm:p-4">
+                <h2 className="text-lg font-semibold">{title}</h2>
+                <p className="text-gray-700 mb-4 text-sm">{description}</p>
                 <div className="flex gap-x-2">
                     {techstack && techstack.map((icon) => <div>{icon}</div>)}
                 </div>
@@ -25,9 +26,9 @@ const Card = ({ title, description, image, github, link, techstack }) => {
                             href={github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 mr-4 hover:underline"
+                            className="text-blue-500 mr-4 hover:underline text-sm sm:text-base"
                         >
-                            Git
+                            Github
                         </a>
                     )}
                     {link && (
@@ -35,7 +36,7 @@ const Card = ({ title, description, image, github, link, techstack }) => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 hover:underline"
+                            className="text-blue-500 hover:underline text-sm sm:text-base"
                         >
                             View Project
                         </a>
