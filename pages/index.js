@@ -5,10 +5,9 @@ import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/date";
 import Image from "next/image";
-import Card from "../components/Card";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Card from "../components/Card";
 
 //? static site generation external data rendered at build time
 export async function getStaticProps() {
@@ -21,7 +20,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
-
   const icons = {
     weavedb: (
       <Image
@@ -48,8 +46,6 @@ export default function Home({ allPostsData }) {
     vuejs: <i className="devicon-vuejs-plain colored text-xl"></i>,
     mongodb: <i class="devicon-mongodb-plain colored text-xl"></i>
   };
-
-
   const projects = [
     {
       name: "Formify Ai",
@@ -128,8 +124,6 @@ export default function Home({ allPostsData }) {
           })}
         </div>
       </section>
-
-
     </Layout>
   );
 }
