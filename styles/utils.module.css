@@ -26,6 +26,10 @@
 }
 
 .borderCircle {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  object-position: 25% 25%;
   border-radius: 9999px;
 }
 
