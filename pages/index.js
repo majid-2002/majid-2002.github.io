@@ -122,7 +122,7 @@ export default function Home({ allPostsData }) {
 
       <section>
         <h2 className={utilStyles.headingLg}>Projects</h2>
-        <div className="pt-4">
+        <div className="">
           {projects.map((project) => {
             return <Card {...project} />;
           })}
