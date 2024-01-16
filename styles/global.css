@@ -30,3 +30,19 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+@layer components{
+  .grad-1 {
+    @apply bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500;
+  }
+  .grad-2{
+    @apply bg-gradient-to-r from-red-200 via-red-300 to-yellow-200
+  }
+  .grad-3{
+    @apply bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500
+  }
+  .grad-4{
+    @apply bg-gradient-to-r from-green-300 via-yellow-300 to-pink-300
+  }
+}

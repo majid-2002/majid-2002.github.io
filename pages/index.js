@@ -55,6 +55,7 @@ export default function Home({ allPostsData }) {
       title: "Formify Ai",
       description: "An Ai powered form builder with web3 based validation",
       image: "/images/formify.png",
+      gradient: "2",
       techstack: [
         "typescript",
         "solidity",
@@ -71,6 +72,7 @@ export default function Home({ allPostsData }) {
     {
       title: "ChessArena",
       image: "/images/chess.png",
+      "gradient": "2",
       description: "A Chess multiplayer game",
       techstack: ["next", "tailwind", "mongodb", "node", "socketio"].map(
         (tech) => {
