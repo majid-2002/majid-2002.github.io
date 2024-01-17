@@ -125,8 +125,8 @@ export default function Home({ allPostsData }) {
       <section>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <div className="">
-          {projects.map((project) => {
-            return <Card {...project} />;
+          {projects.map((project, index) => {
+            return <Card {...project} key={index}/>;
           })}
         </div>
       </section>

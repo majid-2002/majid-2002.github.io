@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 
 const Card = ({ title, description, image, github, link, techstack, gradient }) => {
@@ -7,7 +7,7 @@ const Card = ({ title, description, image, github, link, techstack, gradient }) 
         // create a tranparent bg for the card
         <div className=" mx-auto mb-8 rounded-xl overflow-hidden shadow-md bg-white">
             <div className="relative p-2 sm:p-4">
-                <div  className={" h-72 w-auto p-5 rounded-md grad-" + gradient}>
+                <div  className={" h-72 w-auto p-5 rounded-md grad-"+ gradient}>
                     <img
                         className="w-auto mx-auto h-full rounded-md"
                         src={
