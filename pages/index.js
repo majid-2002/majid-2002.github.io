@@ -9,10 +9,10 @@ import Card from "../components/Card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faCode, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-//? static site generation external data rendered at build time
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData(); //? get data from external api or file system
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
@@ -21,7 +21,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
-
   const icons = {
     weavedb: (
       <Image
@@ -46,9 +45,8 @@ export default function Home({ allPostsData }) {
     node: <i className="devicon-nodejs-plain colored text-xl"></i>,
     express: <i className="devicon-express-original colored text-xl"></i>,
     vuejs: <i className="devicon-vuejs-plain colored text-xl"></i>,
-    mongodb: <i class="devicon-mongodb-plain colored text-xl"></i>
+    mongodb: <i className="devicon-mongodb-plain colored text-xl"></i>,
   };
-
 
   const projects = [
     {
@@ -72,7 +70,7 @@ export default function Home({ allPostsData }) {
     {
       title: "ChessArena",
       image: "/images/chess.png",
-      "gradient": "2",
+      gradient: "2",
       description: "A Chess multiplayer game",
       techstack: ["next", "tailwind", "mongodb", "node", "socketio"].map(
         (tech) => {
@@ -93,16 +91,35 @@ export default function Home({ allPostsData }) {
         />
       </Head>
       <section className={"text-lg  flex flex-col"}>
-        <p> 
-          Hello I am <b>Majid</b>, a software developer, working on Next.JS,
-          React.JS and Full Stack Apps Using Node.JS
+        <p>Hello, 👋</p>
+        <br />
+        <p>
+          I'm <span className="font-semibold">Majid</span>, a passionate
+          Fullstack Developer and student based in India. Currently pursuing my
+          Bachelor's in Computer Science, I thrive on crafting innovative
+          solutions and building impactful applications. My project portfolio
+          includes <span className="font-semibold">ChessArena</span>,{" "}
+          <span className="font-semibold">Postify</span> and various other
+          projects, where I've leveraged my skills in frontend and backend
+          development to create engaging user experiences.
         </p>
-        <div className={utilStyles.socialIconList + " pt-4"}>
+        <br></br>
+        <p>
+          I've actively participated and won in various hackathons. I'm actively exploring new technologies and contributing to
+          meaningful projects that make a difference.
+        </p>
+        <div className={utilStyles.socialIconList + " pt-4 flex"}>
           <a href="https://www.github.com/majid-2002">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
           <a href="https://www.instagram.com/majid.127x">
             <FontAwesomeIcon icon={faInstagram} size="lg" />
+          </a>
+          <a href="mailto:majid616365@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} size="lg" />
+          </a>
+          <a href="https://leetcode.com/u/majid_127x/">
+            <FontAwesomeIcon icon={faCode} size="lg" />
           </a>
         </div>
       </section>
@@ -126,7 +143,7 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <div className="">
           {projects.map((project, index) => {
-            return <Card {...project} key={index}/>;
+            return <Card {...project} key={index} />;
           })}
         </div>
       </section>

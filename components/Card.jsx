@@ -9,7 +9,7 @@ const Card = ({ title, description, image, github, link, techstack, gradient }) 
             <div className="relative p-2 sm:p-4">
                 <div  className={" h-72 w-auto p-5 rounded-md grad-"+ gradient}>
                     <img
-                        className="w-auto mx-auto h-full rounded-md"
+                        className="w-auto mx-auto h-full rounded-md object-contain"
                         src={
                             image ||
                             "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
